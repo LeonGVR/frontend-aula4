@@ -6,12 +6,15 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family:'FuturaBoldCondensedOblique', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background-color: #fcfcfcfd;
     color: #333;
-    max-width: auto;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
   
   .header {
@@ -62,7 +65,7 @@
   }
   
   .produtos {
-    padding: 30px 20px;
+    padding: 20px;
     text-align: center;
   }
   
@@ -75,13 +78,13 @@
     width: 30%;
     margin: 10px;
     background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 13px;
+    padding: 20px;
+    border-radius: 14px;
+    vertical-align: top;
   }
   
   .produto img {
-    max-width: 300px;
+  width: 360px;
   }
   
   .precos {
@@ -110,6 +113,8 @@
     color: white;
     padding: 20px;
     text-align: center;
+    margin-top: auto;
+    width: 100%;
   }
   
   .footer a {
@@ -121,4 +126,57 @@
     text-decoration: underline;
   }
   
- 
+  .nome-produto {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .categoria {
+    color: gray;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .preco {
+    color: black;
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .preco-antigo {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+    font-size: 0.9em;
+  }
+  
+  .desconto {
+    color: rgb(0, 138, 0);
+    font-size: 0.9em;
+    margin-left: 5px;
+  }
+  
+  .avaliacao {
+    color: black;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .nota {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    align-items: baseline;
+  }
+  
+  @font-face {
+    font-family: 'FuturaBoldCondensedOblique';
+    src: url('fonts/futura-std-bold-condensed-oblique.otf') format('opentype');
+    font-weight: bold;
+    font-style: oblique;
+  }
+  
